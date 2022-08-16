@@ -11,9 +11,10 @@ public class GameController : MonoBehaviour
     public int resultadoSoma;
 
     [Header("Opções de Resultado ERRADO")]
-    public int respostaErrada1; //VERIFICAR RESULTADO FINAL PARA NÃO SORTEAR O MESMO NÚMERO
-    public int respostaErrada2; //NÃO PODE REPETIR ENTRE ELAS
-    public int respostaErrada3;
+    public int limiteNum = 3; //para sortear três numeros
+
+    public int valorSorteado;
+    public int[] respostasErradas = new int[3]; //qtd maxima de nums para verificar
 
     [Header("Textos")]
     public Text Tn1;
@@ -28,18 +29,21 @@ public class GameController : MonoBehaviour
     {
         TextosCanvas();
 
-        GeradorDeRespostasErradas();
-
         SortearNumeros();
         SomarNumeros(n1, n2);
+
+        if (Input.GetKeyDown(KeyCode.S))
+            GeradorDeRespostasErradas();
     }
 
     void SortearNumeros()
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            n1 = Random.Range(0, 9);
-            n2 = Random.Range(0, 9);
+            n1 = Random.Range(0, 5);
+            n2 = Random.Range(0, 5);
+
+            //GeradorDeRespostasErradas();
         }
     }
 
@@ -50,26 +54,32 @@ public class GameController : MonoBehaviour
 
     void GeradorDeRespostasErradas()
     {
-        /*int valorMin = 0, valorMax = 30;
-        int valorSorteado;
+        for(int i = 0; i <= limiteNum -1; i++)
+        {
+        Inicio:
+            valorSorteado = Random.Range(0, 5);
+            for(int x = 0; x <= limiteNum -1 ; x++)
+            {
+                if(valorSorteado == resultadoSoma)
+                {
+                    goto Inicio;
+                }
 
-        for(int i = 0; i < 3; i--)
-        {
-            valorSorteado = Random.Range(valorMin, valorMax);
-        }*/
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            respostaErrada1 = Random.Range(0, 30);
-            respostaErrada2 = Random.Range(0, 30);
-            respostaErrada3 = Random.Range(0, 30);
+                if(respostasErradas[x] == valorSorteado) //Verificar se o número sorteado é igual a algum elemento da array OU se é igual ao result da soma
+                {
+                    goto Inicio;
+                }
+            }
+
+            respostasErradas[i] = valorSorteado;
         }
     }
 
     void TextosCanvas()
     {
-        Tre1.text = respostaErrada1.ToString();   
-        Tre2.text = respostaErrada2.ToString();   
-        Tre3.text = respostaErrada3.ToString();   
+        Tre1.text = respostasErradas[0].ToString();
+        Tre2.text = respostasErradas[1].ToString();
+        Tre3.text = respostasErradas[2].ToString();
 
         Tn1.text = n1.ToString();
         Tn2.text = n2.ToString();
