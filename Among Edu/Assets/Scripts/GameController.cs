@@ -16,6 +16,10 @@ public class GameController : MonoBehaviour
     public int valorSorteado;
     public int[] respostasErradas = new int[3]; //qtd maxima de nums para verificar
 
+    [Header("Troca cor")]
+    public Color corInicial = Color.green;
+    public Color corAleatoria;
+
     [Header("Textos")]
     public Text Tn1;
     public Text Tn2;
@@ -25,6 +29,13 @@ public class GameController : MonoBehaviour
     public Text Tre2;
     public Text Tre3;
 
+    void Start()
+    {
+        Tn1.color = corInicial;
+        Tn2.color = corInicial;
+        tResultado.color = corInicial;
+    }
+
     void Update()
     {
         TextosCanvas();
@@ -33,7 +44,15 @@ public class GameController : MonoBehaviour
         SomarNumeros(n1, n2);
 
         if (Input.GetKeyDown(KeyCode.S))
+        {
             GeradorDeRespostasErradas();
+            corAleatoria = new Color(Random.Range(0.1f, 1.0f), Random.Range(0.1f, 1.0f), Random.Range(0.1f, 1.0f), 1);
+            
+            Tn1.color = corAleatoria;
+            Tn2.color = corAleatoria;
+            tResultado.color = corAleatoria;
+        }
+
     }
 
     void SortearNumeros()
@@ -42,8 +61,6 @@ public class GameController : MonoBehaviour
         {
             n1 = Random.Range(0, 5);
             n2 = Random.Range(0, 5);
-
-            //GeradorDeRespostasErradas();
         }
     }
 
