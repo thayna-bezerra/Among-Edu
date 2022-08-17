@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 231412658}
   m_Layer: 5
   m_Name: respostaErrada3
-  m_TagString: Untagged
+  m_TagString: RespostaErrada
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 1255254924}
   m_Layer: 5
   m_Name: respostaErrada1
-  m_TagString: Untagged
+  m_TagString: RespostaErrada
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,13 +949,15 @@ GameObject:
   - component: {fileID: 1293716737}
   - component: {fileID: 1293716736}
   - component: {fileID: 1293716735}
+  - component: {fileID: 1293716739}
+  - component: {fileID: 1293716738}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1293716735
 Animator:
   serializedVersion: 3
@@ -1034,12 +1036,48 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293716734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.28, y: -3.39, z: 0}
-  m_LocalScale: {x: 0.12757, y: 0.12757, z: 0.12757}
+  m_LocalPosition: {x: -7.813, y: -3.131, z: 0}
+  m_LocalScale: {x: 0.103996344, y: 0.103996344, z: 0.103996344}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1293716738
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293716734}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1293716739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293716734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ee6e8332d7ffc46b3b15eb9d7250da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animation: {fileID: 1293716735}
+  speed: 5
+  isActive: 0
 --- !u!1 &1306856907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,7 +1285,7 @@ GameObject:
   - component: {fileID: 1591513769}
   m_Layer: 5
   m_Name: respostaErrada2
-  m_TagString: Untagged
+  m_TagString: RespostaErrada
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1325,7 +1363,7 @@ GameObject:
   - component: {fileID: 1705367773}
   m_Layer: 5
   m_Name: respostaCorreta
-  m_TagString: Untagged
+  m_TagString: RespostaCorreta
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
