@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - RespostaCorreta
-  - RespostaErrada
+  - RespostaErrada/1
+  - RespostaErrada/2
+  - RespostaErrada/3
+  - Enemy
   layers:
   - Default
   - TransparentFX
