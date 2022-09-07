@@ -1,0 +1,2222 @@
+fileFormatVersion: 2
+guid: e5262bbe8c139cf449a448dac6d7e8d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3950724719336868907
+    second: numBlue_98
+  - first:
+      213: -6127630197499256694
+    second: numBlue_99
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: numBlue_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2782
+        width: 526
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1daacbf24d69800800000000000000
+      internalID: 618915300303884795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_1
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 2786
+        width: 360
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328f7873159214c60800000000000000
+      internalID: 7800561458383157283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_2
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2780
+        width: 479
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3dce7fb5d3be690800000000000000
+      internalID: -7571890883282545736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_3
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 2785
+        width: 432
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260781cedab6c7ee0800000000000000
+      internalID: -1262015400836042654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_4
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 2799
+        width: 467
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9817f524b5d804cb0800000000000000
+      internalID: -4881746572974526071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_5
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 2784
+        width: 428
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab0764807cc6e330800000000000000
+      internalID: 3739901324207524771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_6
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 2781
+        width: 461
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc05fdd64f601fe80800000000000000
+      internalID: -8146722604051377973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_7
+      rect:
+        serializedVersion: 2
+        x: 3494
+        y: 2778
+        width: 441
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27811e1dc6957d670800000000000000
+      internalID: 8563411540380817522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_8
+      rect:
+        serializedVersion: 2
+        x: 3985
+        y: 2780
+        width: 441
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b6e4a37e57aa500800000000000000
+      internalID: 408268352206564117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_9
+      rect:
+        serializedVersion: 2
+        x: 4456
+        y: 2780
+        width: 497
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf049a4403b1e1b50800000000000000
+      internalID: 6565715200877084924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_10
+      rect:
+        serializedVersion: 2
+        x: 4995
+        y: 2789
+        width: 756
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec574144836adf0f0800000000000000
+      internalID: -1081525574908480050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_11
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 2793
+        width: 590
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a677f9f5528e820800000000000000
+      internalID: 2947647048741513741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_12
+      rect:
+        serializedVersion: 2
+        x: 6468
+        y: 2775
+        width: 670
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527d006699c750860800000000000000
+      internalID: 7495534153111230245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_13
+      rect:
+        serializedVersion: 2
+        x: 7199
+        y: 2785
+        width: 647
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d150442c9e0e47210800000000000000
+      internalID: 1329935084572378397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_14
+      rect:
+        serializedVersion: 2
+        x: 7894
+        y: 2781
+        width: 709
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5930608dece22d670800000000000000
+      internalID: 8561957307507147669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_15
+      rect:
+        serializedVersion: 2
+        x: 8663
+        y: 2788
+        width: 678
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6eed4cdbbd1fd280800000000000000
+      internalID: -9016455236280258962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_16
+      rect:
+        serializedVersion: 2
+        x: 9416
+        y: 2788
+        width: 688
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06f7ae82bd295c80800000000000000
+      internalID: -8333579390551591412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_17
+      rect:
+        serializedVersion: 2
+        x: 10156
+        y: 2786
+        width: 691
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7723c680c681a2420800000000000000
+      internalID: 2605922186664096375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_18
+      rect:
+        serializedVersion: 2
+        x: 10889
+        y: 2782
+        width: 676
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bb600268d40e3c0800000000000000
+      internalID: -4332377603072148655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_19
+      rect:
+        serializedVersion: 2
+        x: 11628
+        y: 2788
+        width: 697
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc9b85bbd65a0b50800000000000000
+      internalID: 6560151308862201016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_20
+      rect:
+        serializedVersion: 2
+        x: 12379
+        y: 2782
+        width: 858
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf21ca2d9a5527b0800000000000000
+      internalID: -5249690159556776007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_21
+      rect:
+        serializedVersion: 2
+        x: 13291
+        y: 2781
+        width: 664
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfe4b5db0e096880800000000000000
+      internalID: -8617340968003899441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_22
+      rect:
+        serializedVersion: 2
+        x: 14012
+        y: 2775
+        width: 811
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2428f07cfd07070800000000000000
+      internalID: 8102221775691203271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_23
+      rect:
+        serializedVersion: 2
+        x: 14882
+        y: 2759
+        width: 752
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d88221a706cd0bc0800000000000000
+      internalID: -3815175573242476333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_24
+      rect:
+        serializedVersion: 2
+        x: 15686
+        y: 2782
+        width: 806
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbafcd6f791a8a40800000000000000
+      internalID: 5371133540686605244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_25
+      rect:
+        serializedVersion: 2
+        x: 16542
+        y: 2781
+        width: 786
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab39133dfdf740a0800000000000000
+      internalID: -6897265040368780382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2081
+        width: 799
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3b5f87ba2e3df10800000000000000
+      internalID: 2293425861358367697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_27
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 2089
+        width: 755
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574bbf9f62a47f0a0800000000000000
+      internalID: -6847923177130314635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_28
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 2078
+        width: 784
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff9d427b7389bc70800000000000000
+      internalID: 8987359097616441329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_29
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 2082
+        width: 814
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6131de5f40db9090800000000000000
+      internalID: -8026592871546015381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_30
+      rect:
+        serializedVersion: 2
+        x: 3413
+        y: 2089
+        width: 822
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da872c88d16d6b530800000000000000
+      internalID: 3870516352108361901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_31
+      rect:
+        serializedVersion: 2
+        x: 4319
+        y: 2085
+        width: 614
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ac9ece16681b6a0800000000000000
+      internalID: -6435214637391033855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_32
+      rect:
+        serializedVersion: 2
+        x: 5002
+        y: 2083
+        width: 770
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc164d41ba0770f30800000000000000
+      internalID: 4541722629317616077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_33
+      rect:
+        serializedVersion: 2
+        x: 5837
+        y: 2079
+        width: 726
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd0be7cb4d3f3060800000000000000
+      internalID: 6935329346859765174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_34
+      rect:
+        serializedVersion: 2
+        x: 6599
+        y: 2085
+        width: 792
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a4bc2f5ef235f00800000000000000
+      internalID: 1104278998303328792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_35
+      rect:
+        serializedVersion: 2
+        x: 7454
+        y: 2089
+        width: 736
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660b7daa591343250800000000000000
+      internalID: 5923413928785195110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_36
+      rect:
+        serializedVersion: 2
+        x: 8249
+        y: 2085
+        width: 792
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bee8f2f101d8cb0800000000000000
+      internalID: -4860210696734971010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_37
+      rect:
+        serializedVersion: 2
+        x: 9103
+        y: 2092
+        width: 726
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab90c677a87325680800000000000000
+      internalID: -8767884456688350790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_38
+      rect:
+        serializedVersion: 2
+        x: 9889
+        y: 2091
+        width: 751
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f884106001547dba0800000000000000
+      internalID: -6064302438108542833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_39
+      rect:
+        serializedVersion: 2
+        x: 10704
+        y: 2089
+        width: 766
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9838c2cadde2b8f40800000000000000
+      internalID: 5731726480370336649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_40
+      rect:
+        serializedVersion: 2
+        x: 11515
+        y: 2086
+        width: 904
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6748713c8a58bcf0800000000000000
+      internalID: -236339422265063569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_41
+      rect:
+        serializedVersion: 2
+        x: 12492
+        y: 2088
+        width: 686
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b768b8cfc606c50800000000000000
+      internalID: 6656440081181997843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_42
+      rect:
+        serializedVersion: 2
+        x: 13269
+        y: 2079
+        width: 811
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a879d5718a2617320800000000000000
+      internalID: 2553930937781819274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_43
+      rect:
+        serializedVersion: 2
+        x: 14132
+        y: 2088
+        width: 811
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efbb3fe3e9133830800000000000000
+      internalID: 4049608956698148835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_44
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1388
+        width: 820
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1842ed4f1002a88e0800000000000000
+      internalID: -1690503517348944767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_45
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1393
+        width: 821
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775e6f3b1c297c3c0800000000000000
+      internalID: -4339338355302537865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_46
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 1390
+        width: 826
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22916edb7c1b74c00800000000000000
+      internalID: 884871323244173602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_47
+      rect:
+        serializedVersion: 2
+        x: 2724
+        y: 1397
+        width: 780
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e64ced717bf43ad0800000000000000
+      internalID: -2723275409789794589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_48
+      rect:
+        serializedVersion: 2
+        x: 3567
+        y: 1400
+        width: 809
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9213eb2d11db8050800000000000000
+      internalID: 5803962468017574555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_49
+      rect:
+        serializedVersion: 2
+        x: 4446
+        y: 1403
+        width: 822
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5578534628ade590800000000000000
+      internalID: -7643268110285769379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_50
+      rect:
+        serializedVersion: 2
+        x: 5328
+        y: 1388
+        width: 844
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9e982ade674f150800000000000000
+      internalID: 5905475774395836887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_51
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 1389
+        width: 635
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64ccb83831e5f900800000000000000
+      internalID: 717727347221775469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_52
+      rect:
+        serializedVersion: 2
+        x: 6974
+        y: 1390
+        width: 770
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797ca9e23a4574c90800000000000000
+      internalID: -7185681620608039017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_53
+      rect:
+        serializedVersion: 2
+        x: 7802
+        y: 1386
+        width: 742
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506bec8e5e9511200800000000000000
+      internalID: 148999106668180997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_54
+      rect:
+        serializedVersion: 2
+        x: 8608
+        y: 1395
+        width: 791
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1cdfb71be4bc240800000000000000
+      internalID: 4813027150971912639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_55
+      rect:
+        serializedVersion: 2
+        x: 9486
+        y: 1399
+        width: 733
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40aa8b80e08da5a0800000000000000
+      internalID: -6508404184578351030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_56
+      rect:
+        serializedVersion: 2
+        x: 10305
+        y: 1386
+        width: 784
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b188a0009cd57e670800000000000000
+      internalID: 8567919933966157851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_57
+      rect:
+        serializedVersion: 2
+        x: 11161
+        y: 1391
+        width: 752
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3138646bc4398c60800000000000000
+      internalID: 7820840276073132347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_58
+      rect:
+        serializedVersion: 2
+        x: 11969
+        y: 1385
+        width: 758
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c0c079a73c9e140800000000000000
+      internalID: 4749542213326474355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_59
+      rect:
+        serializedVersion: 2
+        x: 12800
+        y: 1385
+        width: 784
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23d43458ab9acf20800000000000000
+      internalID: 3443736012347724590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_60
+      rect:
+        serializedVersion: 2
+        x: 13660
+        y: 1383
+        width: 859
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08aaa76f05e3468f0800000000000000
+      internalID: -548244737178817920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_61
+      rect:
+        serializedVersion: 2
+        x: 14589
+        y: 1387
+        width: 688
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6013e8b7fa7d231b0800000000000000
+      internalID: -5678239031468609274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_62
+      rect:
+        serializedVersion: 2
+        x: 15352
+        y: 1397
+        width: 824
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b57d610d579bef20800000000000000
+      internalID: 3453019965021320629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_63
+      rect:
+        serializedVersion: 2
+        x: 16236
+        y: 1385
+        width: 777
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7048887fcae8838f0800000000000000
+      internalID: -560541280069188601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_64
+      rect:
+        serializedVersion: 2
+        x: 17091
+        y: 1397
+        width: 823
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71bd43b9863c2f70800000000000000
+      internalID: 9163759306838749563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_65
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 696
+        width: 802
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bebe1ca71a915e0800000000000000
+      internalID: -1938340615994741863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_66
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 689
+        width: 838
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6f3c59f52a08490800000000000000
+      internalID: -7746012827659012357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_67
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 688
+        width: 778
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84085ebf339cdae0800000000000000
+      internalID: -1523180671972408177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_68
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 692
+        width: 806
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eff382bfff0f9260800000000000000
+      internalID: 7106416327900004328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_69
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 696
+        width: 817
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54a729cebc26ba70800000000000000
+      internalID: 8842304116318774364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_70
+      rect:
+        serializedVersion: 2
+        x: 4399
+        y: 697
+        width: 834
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e2fe10061f00ae0800000000000000
+      internalID: -1585001674182807923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_71
+      rect:
+        serializedVersion: 2
+        x: 5299
+        y: 703
+        width: 641
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340f1cfbc21692400800000000000000
+      internalID: 299877695020462147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_72
+      rect:
+        serializedVersion: 2
+        x: 6013
+        y: 692
+        width: 766
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa935d4b0938a78b0800000000000000
+      internalID: -5153662166039709265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_73
+      rect:
+        serializedVersion: 2
+        x: 6844
+        y: 696
+        width: 726
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3367e4712e9e6bf0800000000000000
+      internalID: -329151856219036868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_74
+      rect:
+        serializedVersion: 2
+        x: 7631
+        y: 694
+        width: 777
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27340b1084fa78600800000000000000
+      internalID: 470537409884341106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_75
+      rect:
+        serializedVersion: 2
+        x: 8489
+        y: 692
+        width: 736
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25df2d6964bc91af0800000000000000
+      internalID: -425085185771242158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_76
+      rect:
+        serializedVersion: 2
+        x: 9283
+        y: 696
+        width: 801
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b263c47a94bae3660800000000000000
+      internalID: 7367514373252462123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_77
+      rect:
+        serializedVersion: 2
+        x: 10141
+        y: 696
+        width: 735
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c4f4984d8ca6e30800000000000000
+      internalID: 4497627993045158953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_78
+      rect:
+        serializedVersion: 2
+        x: 10940
+        y: 700
+        width: 747
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31c2c12bed9de010800000000000000
+      internalID: 1219804707296559418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_79
+      rect:
+        serializedVersion: 2
+        x: 11728
+        y: 696
+        width: 810
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6a53e0e506d4440800000000000000
+      internalID: 4921695924867409590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_80
+      rect:
+        serializedVersion: 2
+        x: 12593
+        y: 691
+        width: 834
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbe1c08413340620800000000000000
+      internalID: 2739370636500659189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_81
+      rect:
+        serializedVersion: 2
+        x: 13490
+        y: 691
+        width: 649
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299f8e8390d204ea0800000000000000
+      internalID: -5890658794967860846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_82
+      rect:
+        serializedVersion: 2
+        x: 14227
+        y: 684
+        width: 768
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c8652c41ab17540800000000000000
+      internalID: 5003985259307895841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_83
+      rect:
+        serializedVersion: 2
+        x: 15040
+        y: 697
+        width: 747
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8d391b03cf13830800000000000000
+      internalID: 4049294826050672843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_84
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 792
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd672a9dda773280800000000000000
+      internalID: -9063640632867197513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_85
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 3
+        width: 755
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76dc7fa330978ac0800000000000000
+      internalID: -3852952404530243969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_86
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3
+        width: 789
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5c4cd1f68132000800000000000000
+      internalID: 9878489704744377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_87
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 0
+        width: 746
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb2c3ad8918f0690800000000000000
+      internalID: -7633740349873312799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_88
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 0
+        width: 738
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2eb969b39b505e50800000000000000
+      internalID: 6796032527731113515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_89
+      rect:
+        serializedVersion: 2
+        x: 4197
+        y: 0
+        width: 781
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d37577b3964e5220800000000000000
+      internalID: 2476494445352416216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_90
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 0
+        width: 866
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d4c6f21fba08370800000000000000
+      internalID: 8322841163751771408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_91
+      rect:
+        serializedVersion: 2
+        x: 5993
+        y: 0
+        width: 674
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4003c4c6a5dd2af10800000000000000
+      internalID: 2279627741836619780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_92
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 0
+        width: 828
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d7a58c435839490800000000000000
+      internalID: -7740696872773583471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_93
+      rect:
+        serializedVersion: 2
+        x: 7624
+        y: 0
+        width: 802
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c31c95ccf79c1c0800000000000000
+      internalID: -4482911438414726029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_94
+      rect:
+        serializedVersion: 2
+        x: 8473
+        y: 0
+        width: 841
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36dc97539c09b6220800000000000000
+      internalID: 2480235213657591139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_95
+      rect:
+        serializedVersion: 2
+        x: 9373
+        y: 0
+        width: 799
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28588fbbd0e13d310800000000000000
+      internalID: 1428518551143613826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_96
+      rect:
+        serializedVersion: 2
+        x: 10252
+        y: 0
+        width: 829
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c5d541cdd501f20800000000000000
+      internalID: 3391313719225834555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_97
+      rect:
+        serializedVersion: 2
+        x: 11133
+        y: 0
+        width: 802
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187304d0911c0bb10800000000000000
+      internalID: 1995306948265785217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_98
+      rect:
+        serializedVersion: 2
+        x: 11976
+        y: 0
+        width: 823
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d33292bcc43c29c0800000000000000
+      internalID: -3950724719336868907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: numBlue_99
+      rect:
+        serializedVersion: 2
+        x: 12861
+        y: 0
+        width: 824
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80a91b0dc846faa0800000000000000
+      internalID: -6127630197499256694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

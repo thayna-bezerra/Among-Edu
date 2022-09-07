@@ -14,14 +14,19 @@ public class PlayerController : MonoBehaviour
     public bool encontrouResposta = false;
     public bool respostaErrada = false;
 
+    public bool olhandoParaDireita;
+
     public int vida = 3;
     public GameObject[] VidasHUD = new GameObject[3];
 
     public GameObject panelErrou;
 
+    public Controle controle;
+
+
     private void Start()
     {
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         AnimationPlayer = GetComponent<Animator>();
         rgbd = GetComponent<Rigidbody2D>();
 
@@ -41,6 +46,7 @@ public class PlayerController : MonoBehaviour
         if(vida <= 0)
         {
             panelErrou.SetActive(true);
+            controle.jogoPausado();
             //Time.timeScale = 0;
         }
     }
@@ -56,12 +62,14 @@ public class PlayerController : MonoBehaviour
         if (a > 0)
         {
             isActive = true; //está ativo andando
+            olhandoParaDireita = true;
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
 
         else if (a < 0 || b < 0 || b > 0)
         {
             isActive = true; //está ativo andando
+            olhandoParaDireita = false;
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
 
@@ -116,10 +124,21 @@ public class PlayerController : MonoBehaviour
             vida--;
         }
 
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("Enemy2"))
         {
             print("tocou inimigo");
             vida--;
+        }
+
+        if (collision.CompareTag("Vida"))
+        {
+            print("mais vida");
+
+            if (vida <= 2)
+            {
+                vida++;
+                Destroy(collision.gameObject);
+            }
         }
     }
 

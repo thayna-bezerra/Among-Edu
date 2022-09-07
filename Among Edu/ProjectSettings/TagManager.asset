@@ -9,6 +9,9 @@ TagManager:
   - RespostaErrada/2
   - RespostaErrada/3
   - Enemy
+  - SpawnPosition
+  - Vida
+  - Enemy2
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Main
   - 
   - 
   - 

@@ -10,6 +10,8 @@ public class PosicionarResposta : MonoBehaviour
 
     public GameObject panelAcertou;
 
+    public Controle controle;
+
     void Update()
     {
         if(pc.encontrouResposta == true)
@@ -17,6 +19,7 @@ public class PosicionarResposta : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, destination.position, velocity * Time.deltaTime); //Velocidade multiplicado por 0.02 segundos (deltaTime padrão)
 
             StartCoroutine(chamaPanel());
+            controle.jogoPausado();
         }
     }
 

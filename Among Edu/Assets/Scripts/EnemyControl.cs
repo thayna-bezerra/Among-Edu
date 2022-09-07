@@ -13,9 +13,12 @@ public class EnemyControl : MonoBehaviour
 
     public Animator AnimationEnemy;
 
-    //public Rigidbody2D rgbd2D;
+    public Transform posEnemy;
+
+    public SpriteRenderer sr;
+
     [SerializeField]
-    private SpriteRenderer spriteR;
+    public PlayerController pc;
 
     void Start()
     {
@@ -39,17 +42,19 @@ public class EnemyControl : MonoBehaviour
     IEnumerator forStoppedTrue()
     {
         inimigoParado();
+
         yield return new WaitForSeconds(10f);
+
         isStopped = false;
         isActive = true;
     }
+
     IEnumerator forActiveTrue()
     {
         inimigoAndando();
-        //verificar lados do jogador
-        
 
         yield return new WaitForSeconds(10f);
+
         isStopped = true;
         isActive = false;
     }
@@ -58,24 +63,31 @@ public class EnemyControl : MonoBehaviour
     {
         AnimationEnemy.enabled = false;
         transform.position = Vector2.Lerp(transform.position, posPlayer.position, velocity * Time.deltaTime);
-        
 
-        //fazer o contrario para o enemy2, pois ele está com flip ativado ja
-        if (posPlayer.transform.position.y > 0)
+        if(this.gameObject.tag == "Enemy")
         {
-            this.spriteR.flipX = false;
+            if (transform.position.x > posPlayer.position.x)
+                sr.flipX = true;
+            else sr.flipX = false;
         }
 
-        else if (posPlayer.transform.position.y < 0)
+        if(this.gameObject.tag == "Enemy2")
         {
-            this.spriteR.flipX = true;
+            if (transform.position.x > posPlayer.position.x)
+                sr.flipX = false;
+            else sr.flipX = true;
         }
+
     } 
 
     void inimigoParado()
     {
+        transform.position = Vector2.Lerp(transform.position, posInicial.position, velocity * Time.deltaTime);
         AnimationEnemy.enabled = true;
         AnimationEnemy.Play("idle");
-        transform.position = Vector3.Lerp(transform.position, posInicial.position, velocity * Time.deltaTime);
+
+        //estar do lado correto quando voltar para a pos inicial
+        if (this.gameObject.tag == "Enemy" || this.gameObject.tag == "Enemy2")
+            sr.flipX = false;
     }
 }
