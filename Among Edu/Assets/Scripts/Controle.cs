@@ -11,6 +11,7 @@ public class Controle : MonoBehaviour
     public GameObject Enemy;
     public GameObject Enemy2;
 
+
     /*if(auxCheckValue)
        isPaused = false;
     else
@@ -51,6 +52,5 @@ public class Controle : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         jogoDespausado();
-        //Time.timeScale = 1;
     }
 }
