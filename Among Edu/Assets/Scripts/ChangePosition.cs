@@ -7,58 +7,134 @@ public class ChangePosition : MonoBehaviour
     public List<Vector2> areasPos = new List<Vector2>();//Pontos com o valor de cada transform
     public List<GameObject> numerosParaNovaPos = new List<GameObject>();//Numeros que serão transferidos entre esses pontos
 
-    public int qtdNumeros = 4;
+    public int limitePos = 5;
 
-    //public Vector2 ultimoValor;
-    public List<Vector2> ultimosValores = new List<Vector2>();
+    //Lista para salvar todas as posições que ja foram sorteadas;
+    public List<Vector2> posicoesSorteadas = new List<Vector2>();
+    public List<GameObject> spritesSorteadas = new List<GameObject>();
 
-    int randomIndex; 
+    int randomIndex, randomNums;
     Vector2 randomPos;
+    GameObject randomNum;
 
-    void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-            posicaoAleatoria();
+        chamarNovasPos();
     }
 
-    void posicaoAleatoria()
+    void chamarNovasPos()
     {
-       /* for (int i = 0; i <= qtdNumeros - 1; i++)
+        for (int i = 0; i < 4; i++)
         {
-        Inicio:
+            gerarNovasPos();
+            gerarNovasSpritesNums();
+        }
+
+        spritesSorteadas[0].transform.position = posicoesSorteadas[0];
+        spritesSorteadas[1].transform.position = posicoesSorteadas[1];
+        spritesSorteadas[2].transform.position = posicoesSorteadas[2];
+        spritesSorteadas[3].transform.position = posicoesSorteadas[3];
+    }
+
+    void gerarNovasPos()
+    {
+        randomIndex = Random.Range(0, areasPos.Count);
+        randomPos = areasPos[randomIndex];
+
+        if (posicoesSorteadas.Contains(randomPos))
+            gerarNovasPos();
+        else
+            posicoesSorteadas.Add(randomPos);
+    }
+
+    void gerarNovasSpritesNums()
+    {
+        randomNums = Random.Range(0, numerosParaNovaPos.Count);
+        randomNum = numerosParaNovaPos[randomNums];
+
+        if (spritesSorteadas.Contains(randomNum))
+            gerarNovasSpritesNums();
+        else
+            spritesSorteadas.Add(randomNum);
+    }
+}
+    /*void novaPos()
+    {
+        for (int i = 0; i <5; i++) //Está gerando e salvando as 4 posições na lista
+        {
+            
             randomIndex = Random.Range(0, areasPos.Count);
             randomPos = areasPos[randomIndex];
 
-
-            for (int x = 0; x <= qtdNumeros - 1; x++)
+            if (posicoesSorteadas.Contains(randomPos))
             {
-                if (ultimosValores[x] == randomPos)
-                {
-                    goto Inicio;
-                }
-
+                randomIndex = Random.Range(0, areasPos.Count);
+                randomPos = areasPos[randomIndex];
             }
 
-            ultimosValores[i] = randomPos;
-            
 
-            
-            //posSorteadas[i] = randomPos;
+            else
+                posicoesSorteadas.Add(randomPos);
+        }
 
+        for (int i = 0; i <5; i++) //Está gerando e salvando as 4 posições na lista
+        {
             int randomNums = Random.Range(0, numerosParaNovaPos.Count);
             GameObject randomNum = numerosParaNovaPos[randomNums];
-            
-            randomNum.transform.position = ultimosValores[i];
-            //randomNum.transform.position = randomPos;
+
+            if (!spritesSorteadas.Contains(randomNum))
+                 spritesSorteadas.Add(randomNum);
         }*/
+
+        //for (int x = 0; x <4; x++)
+        //spritesSorteadas[x].transform.position = posicoesSorteadas[x];
+
+        //spritesSorteadas[0].transform.position = posicoesSorteadas[0];
+        //spritesSorteadas[1].transform.position = posicoesSorteadas[1];
+        //spritesSorteadas[2].transform.position = posicoesSorteadas[2];
+        //spritesSorteadas[3].transform.position = posicoesSorteadas[3];
+
+   
+
+
+    /*void irParaNovaPos()
+    {
+            //Inicio:
+        for(int i = 0; i <= limitePos-1; i++) //Está gerando e salvando as 4 posições na lista
+        {
+            int randomIndex = Random.Range(0, areasPos.Count);
+            Vector2 randomPos = areasPos[randomIndex];
+
+            if (!posicoesSorteadas.Contains(randomPos))
+            {
+                posicoesSorteadas.Add(randomPos);
+                //goto Inicio;
+            }
+        }     
+    
+            //Inicio2:
+        for(int i = 0; i <= limitePos-1; i++) //Está gerando e salvando as 4 posições na lista
+        {
+            int randomNums = Random.Range(0, numerosParaNovaPos.Count);
+            GameObject randomNum = numerosParaNovaPos[randomNums];
+
+            if (!spritesSorteadas.Contains(randomNum)) //se random num não estiver na lista, add randomnum a lista
+            {
+                spritesSorteadas.Add(randomNum);
+                //goto Inicio2;
+            }
+        }
+
+
+        for (int x = 0; x <= limitePos-1; x++)
+        {
+            spritesSorteadas[x].transform.position = posicoesSorteadas[x];
+        }
 
     }
 
-    /*void posicaoAleatoria()
+    void aaaa() //CODIGO PARA TROCAR POSIÇÃO DOS NÚMEROS UM POR UM
     {
-        for(int i = 0; i<= qtdNumeros -1; i++)
-        {
-
             int randomIndex = Random.Range(0, areasPos.Count);
             Vector2 randomPos = areasPos[randomIndex];
 
@@ -66,70 +142,7 @@ public class ChangePosition : MonoBehaviour
             GameObject randomNum = numerosParaNovaPos[randomNums];
 
             randomNum.transform.position = randomPos;
-        }
-
+        
     }*/
 
-    /*
-    void irParaPosAleatoria()
-    { ////PRECISO FAZER ISSO QUATRO VEZES // SEMPRE VERIFICAR SE JÁ NAO TEM
 
-        for (int i = 0; i <= qtdNumeros - 1; i++)
-        {
-        Inicio:
-            //GERANDO POSIÇÃO ALEATÓRIA
-            int randomIndex = Random.Range(0, areasPos.Count);
-
-            //SORTEANDO O NÚMERO QUE VAI PARA A POSICAO
-            //int randomNums = Random.Range(0, numerosParaNovaPos.Count);
-
-            //Se o ultimo numero gerado e a ultima posicao gerada
-            for (int x = 0; x <= qtdNumeros; x++)
-            {
-                if (posSorteadas[x] == randomIndex)
-                {
-                    goto Inicio;
-                } // || spriteSorteado[x] == randomNums
-            }
-
-            posSorteadas[i] = randomIndex;
-            //spriteSorteado[i] = randomNums;
-
-
-
-            //Vector2 randomPos = areasPos[randomIndex];
-            //GameObject randomNum = numerosParaNovaPos[randomNums]; //game object
-
-           // print(posSorteadas + "com os nums: " + spriteSorteado);
-
-            //guardar numa lista os valores sorteados
-            //randomNum.transform.position = randomPos;   //Definindo nova posicao para o numero
-        }
-
-            //print("GameObject " + randomNum + " vai para a posição " + randomPos);
-            //randomNum.GetComponent<Transform>().position = randomPos;*/
-        
-
-        /*
-        for (int i = 0; i <= limiteNum - 1; i++)
-        {
-        Inicio:
-            valorSorteado = Random.Range(0, 5);
-
-            for (int x = 0; x <= limiteNum - 1; x++)
-            {
-                if (valorSorteado == resultadoSoma)
-                {
-                    goto Inicio;
-                }
-
-                if (respostasErradas[x] == valorSorteado) //Verificar se o número sorteado é igual a algum elemento da array OU se é igual ao result da soma
-                {
-                    goto Inicio;
-                }
-            }
-
-            respostasErradas[i] = valorSorteado;
-        }*/
-    
-}
