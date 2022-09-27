@@ -24,12 +24,25 @@ public class GameController : MonoBehaviour
     public int valorSorteado;
     public int[] respostasErradas = new int[3]; //qtd maxima de nums para verificar
 
+    [Header("Cores")]
+    public Color corAleatoria;
+
+    public SpriteRenderer corResposta;
+    public SpriteRenderer corN1;
+    public SpriteRenderer corN2;
+    public SpriteRenderer corN3;
+    public SpriteRenderer corN4;
+    public SpriteRenderer corN5;
+
+    public PlayerController pc;
+
     private void Start()
     {
         SortearNumeros();
         SomarNumeros(n1, n2);
 
         GeradorDeRespostasErradas();
+        SortearCores();
 
         imgN3.GetComponent<SpriteRenderer>().sprite = numeros[respostasErradas[0]];
         imgN4.GetComponent<SpriteRenderer>().sprite = numeros[respostasErradas[1]];
@@ -50,6 +63,25 @@ public class GameController : MonoBehaviour
     {
         resultadoSoma = N1 + N2;
         imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoSoma];
+    }
+
+    void SortearCores()
+    {
+        //PARA CONTA E RESPOSTA
+        corAleatoria = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
+        corResposta.GetComponent<SpriteRenderer>().color = corAleatoria;
+        corN1.GetComponent<SpriteRenderer>().color = corAleatoria;
+        corN2.GetComponent<SpriteRenderer>().color = corAleatoria;
+
+        //SORTEAR + 3 CORES 
+        //desativar ainmator
+        pc.AnimationResposta1.enabled = false;
+        pc.AnimationResposta2.enabled = false;
+        pc.AnimationResposta3.enabled = false;
+
+        corN3.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
+        corN4.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
+        corN5.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
     }
 
     //Para as opções de respostas erradas

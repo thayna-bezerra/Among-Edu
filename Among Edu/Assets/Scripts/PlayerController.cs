@@ -97,14 +97,12 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("RespostaCorreta"))
         {
-            //Time.timeScale = 0;
-            //panelAcertou.SetActive(true);
-
             encontrouResposta = true;
         }
 
         if (collision.CompareTag("RespostaErrada/1"))
         {
+            AnimationResposta1.enabled = true;
             AnimationResposta1.Play("respostaErrada");
             respostaErrada = true;
             vida--;
@@ -112,6 +110,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("RespostaErrada/2"))
         {
+            AnimationResposta2.enabled = true;
             AnimationResposta2.Play("errada2");
             respostaErrada = true;
             vida--;
@@ -119,6 +118,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("RespostaErrada/3"))
         {
+            AnimationResposta3.enabled = true;
             respostaErrada = true;
             AnimationResposta3.Play("errada3");
             vida--;
