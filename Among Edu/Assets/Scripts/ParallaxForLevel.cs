@@ -4,32 +4,21 @@ using UnityEngine;
 
 public class ParallaxForLevel : MonoBehaviour
 {
-    private float length;
-    private float StartPos;
-
-    public float ParallaxEffect;
+    public float speed;
+    private Vector3 startPosition;
 
     void Start()
     {
-        StartPos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        startPosition = transform.position;
     }
 
     void Update()
     {
-        float RePos = transform.position.x * (1 - ParallaxEffect);
-        float Distance = transform.position.x * ParallaxEffect;
+        transform.Translate(translation: Vector3.right * speed * Time.deltaTime);
 
-        transform.position = new Vector3(StartPos + Distance, transform.position.y, transform.position.z);
-
-        if (RePos > StartPos + length)
+        if(transform.position.x > 45.4f)
         {
-            StartPos += length;
-        }
-
-        else if (RePos < StartPos - length)
-        {
-            StartPos -= length;
+            transform.position = startPosition;
         }
     }
 }
