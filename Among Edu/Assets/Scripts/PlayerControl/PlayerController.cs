@@ -46,8 +46,7 @@ public class PlayerController : MonoBehaviour
         if(vida <= 0)
         {
             panelErrou.SetActive(true);
-            controle.jogoPausado();
-            //Time.timeScale = 0;
+            controle.GanhouJogoParado();
         }
     }
 

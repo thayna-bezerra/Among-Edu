@@ -341,7 +341,7 @@ MonoBehaviour:
   "tempoRenovarFor\xE7a": 3
   pontoPivo: {fileID: 1896555624}
   z: 0
-  y: 180
+  y: 0
   timeRotation: 10
 --- !u!61 &91177465
 BoxCollider2D:
@@ -574,7 +574,7 @@ MonoBehaviour:
   "tempoRenovarFor\xE7a": 3
   pontoPivo: {fileID: 1896555624}
   z: 0
-  y: 0
+  y: 180
   timeRotation: 9
 --- !u!61 &295489161
 BoxCollider2D:
@@ -2874,7 +2874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.009433985, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7647059}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

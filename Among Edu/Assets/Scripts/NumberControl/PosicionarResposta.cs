@@ -19,7 +19,7 @@ public class PosicionarResposta : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, destination.position, velocity * Time.deltaTime); //Velocidade multiplicado por 0.02 segundos (deltaTime padrão)
 
             StartCoroutine(chamaPanel());
-            controle.jogoPausado();
+            controle.GanhouJogoParado();
         }
     }
 
