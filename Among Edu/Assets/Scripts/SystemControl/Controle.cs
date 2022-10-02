@@ -5,12 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Controle : MonoBehaviour
 {
-    //Scripts para desativar
+    [Header("Objeto com os SCRIPTS para desativar")]
     public GameObject Player;
     public GameObject Spawn;
     public GameObject Enemy;
     public GameObject Enemy2;
-    //public GameObject Numeros;
 
     public GameObject panelPause;
     public GameObject btnPauseAtivado;
@@ -23,7 +22,7 @@ public class Controle : MonoBehaviour
         btnPauseAtivado.SetActive(true);
 
         Player.GetComponent<SpriteRenderer>().enabled = true;
-        Player.GetComponent<PlayerController>().enabled = true;
+        //Player.GetComponent<PlayerController>().enabled = true;
 
         Spawn.GetComponent<Spawn>().enabled = true;
         Enemy.GetComponent<EnemyControl>().enabled = true;
@@ -38,7 +37,6 @@ public class Controle : MonoBehaviour
         else
             panelPause.SetActive(false);
     }
-
     
     public void GanhouJogoParado()
     {
@@ -76,14 +74,17 @@ public class Controle : MonoBehaviour
 
     }
 
-    public void iniciarGame()
-    {
-        SceneManager.LoadScene("Adicao");
-    }
-
     public void RepetirRodada()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //jogoDespausado();
+    }
+    public void voltarParaPrimeiraTela()
+    {
+        SceneManager.LoadScene("_Inicio");
+    }
+
+    public void sairDoGame()
+    {
+        Application.Quit();
     }
 }
