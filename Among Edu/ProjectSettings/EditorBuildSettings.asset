@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Adicao.unity
     guid: 3cf8590dc2c1af94abda738f5aebf42f
+  - enabled: 1
+    path: Assets/Scenes/Subtracao.unity
+    guid: ac710771243a6e14797083b92b2daf5b
+  - enabled: 1
+    path: Assets/Scenes/Multiplicacao.unity
+    guid: 46ed740cf2c4da54c8bd9e5d57c085ba
+  - enabled: 1
+    path: Assets/Scenes/Divisao.unity
+    guid: a31b5ee2e38d5944cb2dc406c80f27a8
   m_configObjects: {}

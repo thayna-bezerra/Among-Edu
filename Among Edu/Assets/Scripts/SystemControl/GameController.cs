@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    [Header("Variáveis da SOMA")]
+    [Header("Variáveis para a aritmética")]
     public int n1; //Números que deverão ser aleatórios e somado entre eles
     public int n2;
     public int resultadoSoma;
+    public int resultadoSubtracao;
+    public int resultadoMult;
+    public int resultadoDivisao;
 
     //PRINCIPAIS NÚMEROS DA CONTA
     public SpriteRenderer imgN1, imgN2;
@@ -38,8 +41,31 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        SortearNumeros();
-        SomarNumeros(n1, n2);
+
+        if(SceneManager.GetActiveScene().name == "Adicao")
+        {
+            SortearNumeros();
+            SomarNumeros(n1, n2);
+        }
+
+        if (SceneManager.GetActiveScene().name == "Subtracao")
+        {
+            SortearNumsSub();
+            SubtrairNumeros(n1, n2);
+        }
+
+        if (SceneManager.GetActiveScene().name == "Multiplicacao")
+        {
+            SortearNumeros();
+            MultiplicarNumeros(n1, n2);
+        }
+
+        if (SceneManager.GetActiveScene().name == "Divisao")
+        {
+            SortearNumsSub();
+            DividirNumeros(n1, n2);
+        }
+
 
         GeradorDeRespostasErradas();
         SortearCores();
@@ -52,17 +78,44 @@ public class GameController : MonoBehaviour
 
     void SortearNumeros()
     {
-        n1 = Random.Range(0, 5);
-        n2 = Random.Range(0, 5);
+        n1 = Random.Range(0, 10);
+        n2 = Random.Range(0, 10);
 
         imgN1.GetComponent<SpriteRenderer>().sprite = numeros[n1];
         imgN2.GetComponent<SpriteRenderer>().sprite = numeros[n2];
+    }
+
+    void SortearNumsSub()
+    {
+        n1 = Random.Range(30, 100);
+        n2 = Random.Range(1, 30);
+
+        imgN1.GetComponent<SpriteRenderer>().sprite = numeros[n1];
+        imgN2.GetComponent<SpriteRenderer>().sprite = numeros[n2];
+
     }
 
     void SomarNumeros(int N1, int N2)
     {
         resultadoSoma = N1 + N2;
         imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoSoma];
+    }
+
+    void SubtrairNumeros(int N1, int N2)
+    {
+        resultadoSubtracao = N1 - N2;
+        imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoSubtracao];
+    }
+    void MultiplicarNumeros(int N1, int N2)
+    {
+        resultadoMult = N1 * N2;
+        imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoMult];
+    }
+
+    void DividirNumeros(int N1, int N2)
+    {
+        resultadoDivisao = N1 / N2;
+        imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoDivisao];
     }
 
     void SortearCores()
