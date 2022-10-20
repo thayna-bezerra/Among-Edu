@@ -41,7 +41,6 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-
         if(SceneManager.GetActiveScene().name == "Adicao")
         {
             SortearNumeros();
@@ -88,7 +87,7 @@ public class GameController : MonoBehaviour
     void SortearNumsSub()
     {
         n1 = Random.Range(30, 100);
-        n2 = Random.Range(1, 30);
+        n2 = Random.Range(1, 10);
 
         imgN1.GetComponent<SpriteRenderer>().sprite = numeros[n1];
         imgN2.GetComponent<SpriteRenderer>().sprite = numeros[n2];
