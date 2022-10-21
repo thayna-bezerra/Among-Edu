@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Controle : MonoBehaviour
@@ -16,13 +17,18 @@ public class Controle : MonoBehaviour
     public GameObject HUD;
     public bool isPaused;
 
+    public Text textName;
+    public string username;
+
     private void Start()
     {
+        username = PlayerPrefs.GetString("User"); //pegando dado salvo no "user" e aplicando noutra variavel
+        textName.text = username.ToString();
+
         HUD.SetActive(true);
         btnPauseAtivado.SetActive(true);
 
         Player.GetComponent<SpriteRenderer>().enabled = true;
-        //Player.GetComponent<PlayerController>().enabled = true;
 
         Spawn.GetComponent<Spawn>().enabled = true;
         Enemy.GetComponent<EnemyControl>().enabled = true;
@@ -31,7 +37,7 @@ public class Controle : MonoBehaviour
 
     private void Update()
     {
-        if(isPaused == true)
+        if (isPaused == true)
             panelPause.SetActive(true);
 
         else

@@ -7,6 +7,7 @@ public class InicioControle : MonoBehaviour
 {
     [Header("Panels")]
     public GameObject panelPrimeiraTela;
+    public GameObject panelTypeName;
     public GameObject panelOpcoes;
     public GameObject panelCutscene;
 
@@ -23,6 +24,7 @@ public class InicioControle : MonoBehaviour
     private void Start()
     {
        panelPrimeiraTela.SetActive(true);
+       panelTypeName.SetActive(false);
        panelOpcoes.SetActive(false);
        panelCutscene.SetActive(false);
 
@@ -39,6 +41,15 @@ public class InicioControle : MonoBehaviour
     public void irParaPrimeiraTela()
     {
         panelPrimeiraTela.SetActive(true);
+        panelTypeName.SetActive(false);
+        panelOpcoes.SetActive(false);
+        panelCutscene.SetActive(false);
+    }
+
+    public void irTelaEscreverNome()
+    {
+        panelPrimeiraTela.SetActive(false);
+        panelTypeName.SetActive(true);
         panelOpcoes.SetActive(false);
         panelCutscene.SetActive(false);
     }
@@ -46,6 +57,7 @@ public class InicioControle : MonoBehaviour
     public void irParaOpcoes()
     {
         panelPrimeiraTela.SetActive(false);
+        panelTypeName.SetActive(false);
         panelOpcoes.SetActive(true);
         panelCutscene.SetActive(false);
     }
