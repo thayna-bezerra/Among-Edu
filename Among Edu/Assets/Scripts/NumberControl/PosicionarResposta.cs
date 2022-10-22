@@ -11,22 +11,26 @@ public class PosicionarResposta : MonoBehaviour
     public GameObject panelAcertou;
 
     public Controle controle;
+    public RoundsCounter rc;
 
     void Update()
     {
         if(pc.encontrouResposta == true)
         {
             transform.position = Vector3.Lerp(transform.position, destination.position, velocity * Time.deltaTime); //Velocidade multiplicado por 0.02 segundos (deltaTime padrão)
+            
 
-            StartCoroutine(chamaPanel());
-            controle.GanhouJogoParado();
+            //StartCoroutine(chamaPanel());
+           // controle.GanhouJogoParado();
         }
     }
 
-    IEnumerator chamaPanel()
+    /*IEnumerator chamaPanel()
     {
         yield return new WaitForSeconds(2f);
-        panelAcertou.SetActive(true); //chamar animação de panel
-    }
+        //panelAcertou.SetActive(true); //chamar animação de panel
+
+        //Adiciona valor a variável:
+    }*/
 
 }

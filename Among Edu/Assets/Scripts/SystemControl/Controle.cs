@@ -84,13 +84,21 @@ public class Controle : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
     public void voltarParaPrimeiraTela()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("_Inicio");
     }
 
     public void sairDoGame()
     {
+        PlayerPrefs.DeleteAll();
         Application.Quit();
+    }
+
+    public void zerarVars()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -22,15 +23,14 @@ public class PlayerController : MonoBehaviour
     public GameObject panelErrou;
 
     public Controle controle;
+    public RoundsCounter rc;
 
 
     private void Start()
     {
-        //Time.timeScale = 1;
         AnimationPlayer = GetComponent<Animator>();
         rgbd = GetComponent<Rigidbody2D>();
 
-        //panelAcertou.SetActive(false);
         panelErrou.SetActive(false);
     }
 
@@ -45,8 +45,13 @@ public class PlayerController : MonoBehaviour
         HUDVida();
         if(vida <= 0)
         {
-            panelErrou.SetActive(true);
-            controle.GanhouJogoParado();
+            //panelErrou.SetActive(true);
+            //controle.GanhouJogoParado();
+
+            //Adiciona valor a variável:
+
+
+            StartCoroutine(ChamarNovaRodada());
         }
     }
 
@@ -97,6 +102,10 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("RespostaCorreta"))
         {
             encontrouResposta = true;
+
+            rc.encontrouResposta = true; //usar var acima
+            rc.totalAcertos++;
+            PlayerPrefs.SetInt("Acertos", rc.totalAcertos);
         }
 
         if (collision.CompareTag("RespostaErrada/1"))
@@ -105,6 +114,12 @@ public class PlayerController : MonoBehaviour
             AnimationResposta1.Play("respostaErrada");
             respostaErrada = true;
             vida--;
+
+
+            rc.totalErros++;
+            rc.respostaErrada = true;
+
+            PlayerPrefs.SetInt("Erros", rc.totalErros);
         }
 
         if (collision.CompareTag("RespostaErrada/2"))
@@ -113,6 +128,12 @@ public class PlayerController : MonoBehaviour
             AnimationResposta2.Play("errada2");
             respostaErrada = true;
             vida--;
+
+
+            rc.totalErros++;
+            rc.respostaErrada = true;
+
+            PlayerPrefs.SetInt("Erros", rc.totalErros);
         }
 
         if (collision.CompareTag("RespostaErrada/3"))
@@ -121,6 +142,12 @@ public class PlayerController : MonoBehaviour
             respostaErrada = true;
             AnimationResposta3.Play("errada3");
             vida--;
+
+
+            rc.totalErros++;
+            rc.respostaErrada = true;
+
+            PlayerPrefs.SetInt("Erros", rc.totalErros);
         }
 
         if (collision.CompareTag("Enemy") || collision.CompareTag("Enemy2"))
@@ -143,7 +170,6 @@ public class PlayerController : MonoBehaviour
 
     void HUDVida()
     {
-
         switch (vida)
         {
             case 3:
@@ -171,5 +197,12 @@ public class PlayerController : MonoBehaviour
                 break;
 
         }
+    }
+
+    IEnumerator ChamarNovaRodada()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
