@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public int vida = 3;
     public GameObject[] VidasHUD = new GameObject[3];
 
-    public GameObject panelErrou;
+    //public GameObject panelErrou;
 
     public Controle controle;
     public RoundsCounter rc;
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         AnimationPlayer = GetComponent<Animator>();
         rgbd = GetComponent<Rigidbody2D>();
 
-        panelErrou.SetActive(false);
+        //panelErrou.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -46,10 +46,7 @@ public class PlayerController : MonoBehaviour
         if(vida <= 0)
         {
             //panelErrou.SetActive(true);
-            //controle.GanhouJogoParado();
-
-            //Adiciona valor a variável:
-
+            controle.GanhouJogoParado();
 
             StartCoroutine(ChamarNovaRodada());
         }

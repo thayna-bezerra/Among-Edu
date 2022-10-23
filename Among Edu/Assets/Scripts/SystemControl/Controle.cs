@@ -13,6 +13,7 @@ public class Controle : MonoBehaviour
     public GameObject Enemy2;
 
     public GameObject panelPause;
+    public GameObject panelSair;
     public GameObject btnPauseAtivado;
     public GameObject HUD;
     public bool isPaused;
@@ -82,6 +83,9 @@ public class Controle : MonoBehaviour
 
     public void RepetirRodada()
     {
+        //Para não deletar o username
+        PlayerPrefs.DeleteKey("Acertos");
+        PlayerPrefs.DeleteKey("Erros");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -91,14 +95,20 @@ public class Controle : MonoBehaviour
         SceneManager.LoadScene("_Inicio");
     }
 
-    public void sairDoGame()
+    public void chamarPanelSair()
+    {
+        //Chamarcontrole.desativar player
+        panelSair.SetActive(true);
+    }
+
+    public void naoSairDoGame()
+    {
+        panelSair.SetActive(false);
+    }
+
+    public void sairDoGame() //BOTAO SIM
     {
         PlayerPrefs.DeleteAll();
         Application.Quit();
-    }
-
-    public void zerarVars()
-    {
-        PlayerPrefs.DeleteAll();
     }
 }

@@ -8,7 +8,7 @@ public class PosicionarResposta : MonoBehaviour
     public float velocity = 3.0f;
     public PlayerController pc;
 
-    public GameObject panelAcertou;
+    //public GameObject panelAcertou;
 
     public Controle controle;
     public RoundsCounter rc;
@@ -19,9 +19,9 @@ public class PosicionarResposta : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, destination.position, velocity * Time.deltaTime); //Velocidade multiplicado por 0.02 segundos (deltaTime padrão)
             
+            controle.GanhouJogoParado();
 
             //StartCoroutine(chamaPanel());
-           // controle.GanhouJogoParado();
         }
     }
 

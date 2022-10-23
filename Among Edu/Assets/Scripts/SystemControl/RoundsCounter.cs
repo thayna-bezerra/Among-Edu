@@ -14,10 +14,15 @@ public class RoundsCounter : MonoBehaviour
     public Text textAcertos;
     public Text textErros;
 
+    public Text textFinal;
+    public string username;
+
     public bool encontrouResposta = false;
     public bool respostaErrada = false;
 
     public GameObject panelFinal;
+
+    public Controle controle;
 
     private void Start()
     {
@@ -29,7 +34,7 @@ public class RoundsCounter : MonoBehaviour
         totalAcertos = PlayerPrefs.GetInt("Acertos");
         totalErros = PlayerPrefs.GetInt("Erros");
 
-        textAcertos.text = totalAcertos.ToString();
+        textAcertos.text = totalAcertos.ToString(totalAcertos + "  /");
         textErros.text = totalErros.ToString();
 
         totalContas = totalAcertos + totalErros;
@@ -52,12 +57,20 @@ public class RoundsCounter : MonoBehaviour
     {
         panelFinal.SetActive(true);
 
+        textAcertos.enabled = false;
+        textErros.enabled = false;
+
+        controle.GanhouJogoParado();
+
         //acertosPanel.text = totalAcertos.ToString();
         //errosPanel.text = totalErros.ToString();
 
-        //fazer condição de media do total de erros e acertos
-        //textText.text = finalText.ToString("Vc é incrivel"); 
-        //textText.text = finalText.ToString("Tente novamente"); 
+        username = PlayerPrefs.GetString("User"); //pegando dado salvo no "user" e aplicando noutra variavel
+
+        if (totalAcertos >= 6)
+            textFinal.text = ("Parabéns!\r\nVocê é incrível " + username + "!");
+        else
+            textFinal.text = ("Não desista " + username + "!" + "\r\nVamos tentar novamente?"); 
     }
 
 }
