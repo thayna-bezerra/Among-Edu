@@ -14,6 +14,9 @@ public class RoundsCounter : MonoBehaviour
     public Text textAcertos;
     public Text textErros;
 
+    public Text panelTextAcertos;
+    public Text panelTextErros;
+
     public Text textFinal;
     public string username;
 
@@ -34,7 +37,7 @@ public class RoundsCounter : MonoBehaviour
         totalAcertos = PlayerPrefs.GetInt("Acertos");
         totalErros = PlayerPrefs.GetInt("Erros");
 
-        textAcertos.text = totalAcertos.ToString(totalAcertos + "  /");
+        textAcertos.text = totalAcertos.ToString(totalAcertos + " /");
         textErros.text = totalErros.ToString();
 
         totalContas = totalAcertos + totalErros;
@@ -53,6 +56,7 @@ public class RoundsCounter : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
     void ChamaPanel()
     {
         panelFinal.SetActive(true);
@@ -62,8 +66,8 @@ public class RoundsCounter : MonoBehaviour
 
         controle.GanhouJogoParado();
 
-        //acertosPanel.text = totalAcertos.ToString();
-        //errosPanel.text = totalErros.ToString();
+        panelTextAcertos.text = ("Total Acertos: " + totalAcertos);
+        panelTextErros.text = ("Total Erros: " + totalErros);
 
         username = PlayerPrefs.GetString("User"); //pegando dado salvo no "user" e aplicando noutra variavel
 
@@ -72,5 +76,4 @@ public class RoundsCounter : MonoBehaviour
         else
             textFinal.text = ("Não desista " + username + "!" + "\r\nVamos tentar novamente?"); 
     }
-
 }

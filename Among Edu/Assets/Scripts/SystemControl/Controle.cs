@@ -14,8 +14,12 @@ public class Controle : MonoBehaviour
 
     public GameObject panelPause;
     public GameObject panelSair;
+
     public GameObject btnPauseAtivado;
+    public GameObject btnSair;
+
     public GameObject HUD;
+
     public bool isPaused;
 
     public Text textName;
@@ -28,8 +32,12 @@ public class Controle : MonoBehaviour
 
         HUD.SetActive(true);
         btnPauseAtivado.SetActive(true);
+        btnSair.SetActive(true);
 
         Player.GetComponent<SpriteRenderer>().enabled = true;
+        Player.GetComponent<BoxCollider2D>().enabled = true; ///
+
+        textName.enabled = true;
 
         Spawn.GetComponent<Spawn>().enabled = true;
         Enemy.GetComponent<EnemyControl>().enabled = true;
@@ -48,8 +56,13 @@ public class Controle : MonoBehaviour
     public void GanhouJogoParado()
     {
         btnPauseAtivado.SetActive(false);
+        btnSair.SetActive(false);
+
         Player.GetComponent<SpriteRenderer>().enabled = false;
         Player.GetComponent<PlayerController>().enabled = false;
+        Player.GetComponent<BoxCollider2D>().enabled = false; ///
+
+        textName.enabled = false;
 
         Enemy.GetComponent<EnemyControl>().enabled = false;
         Enemy2.GetComponent<EnemyControl>().enabled = false;
@@ -59,9 +72,14 @@ public class Controle : MonoBehaviour
     public void jogoPausado()
     {
         HUD.SetActive(false);
+
         isPaused = true;
+
         Player.GetComponent<SpriteRenderer>().enabled = false;
         Player.GetComponent<PlayerController>().enabled = false;
+        Player.GetComponent<BoxCollider2D>().enabled = false; ///
+
+        textName.enabled = false;
 
         Enemy.GetComponent<EnemyControl>().enabled = false;
         Enemy2.GetComponent<EnemyControl>().enabled = false;
@@ -71,9 +89,14 @@ public class Controle : MonoBehaviour
     public void jogoDespausado()
     {
         HUD.SetActive(true);
+
         isPaused = false;
+
         Player.GetComponent<SpriteRenderer>().enabled = true;
         Player.GetComponent<PlayerController>().enabled = true;
+        Player.GetComponent<BoxCollider2D>().enabled = true; ///
+
+        textName.enabled = true;
 
         Spawn.GetComponent<Spawn>().enabled = true;
         Enemy.GetComponent<EnemyControl>().enabled = true;
@@ -86,23 +109,34 @@ public class Controle : MonoBehaviour
         //Para não deletar o username
         PlayerPrefs.DeleteKey("Acertos");
         PlayerPrefs.DeleteKey("Erros");
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void voltarParaPrimeiraTela()
     {
-        PlayerPrefs.DeleteAll();
+        //Para não deletar o username
+        PlayerPrefs.DeleteKey("Acertos");
+        PlayerPrefs.DeleteKey("Erros");
+
         SceneManager.LoadScene("_Inicio");
     }
 
     public void chamarPanelSair()
     {
-        //Chamarcontrole.desativar player
+        HUD.SetActive(false);
+
+        GanhouJogoParado();
         panelSair.SetActive(true);
     }
 
     public void naoSairDoGame()
     {
+        jogoDespausado();
+
+        btnPauseAtivado.SetActive(true);
+        btnSair.SetActive(true);
+
         panelSair.SetActive(false);
     }
 

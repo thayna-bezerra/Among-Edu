@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class InicioControle : MonoBehaviour
 {
-    [Header("Panels")]
+    [Header("Panels Principais")]
     public GameObject panelPrimeiraTela;
-    public GameObject panelTypeName;
     public GameObject panelOpcoes;
     public GameObject panelCutscene;
+
+    [Header("Panels Secundarios")]
+    public GameObject panelInfo;
+    public GameObject panelConfig;
+    public GameObject panelSair;
 
     [Header("Astronautas")]
     public GameObject a1;
@@ -24,7 +28,6 @@ public class InicioControle : MonoBehaviour
     private void Start()
     {
        panelPrimeiraTela.SetActive(true);
-       panelTypeName.SetActive(false);
        panelOpcoes.SetActive(false);
        panelCutscene.SetActive(false);
 
@@ -41,15 +44,6 @@ public class InicioControle : MonoBehaviour
     public void irParaPrimeiraTela()
     {
         panelPrimeiraTela.SetActive(true);
-        panelTypeName.SetActive(false);
-        panelOpcoes.SetActive(false);
-        panelCutscene.SetActive(false);
-    }
-
-    public void irTelaEscreverNome()
-    {
-        panelPrimeiraTela.SetActive(false);
-        panelTypeName.SetActive(true);
         panelOpcoes.SetActive(false);
         panelCutscene.SetActive(false);
     }
@@ -57,10 +51,52 @@ public class InicioControle : MonoBehaviour
     public void irParaOpcoes()
     {
         panelPrimeiraTela.SetActive(false);
-        panelTypeName.SetActive(false);
         panelOpcoes.SetActive(true);
         panelCutscene.SetActive(false);
     }
+
+    public void abrirInformacoes()
+    {
+        panelPrimeiraTela.SetActive(false);
+        panelInfo.SetActive(true);
+    }
+    
+    public void abrirConfiguracoes()
+    {
+        panelPrimeiraTela.SetActive(false);
+        panelConfig.SetActive(true);
+    }
+
+    public void abrirPanelSair()
+    {
+        panelPrimeiraTela.SetActive(false);
+        panelSair.SetActive(true);
+    }
+
+    public void fecharPanelInfo()
+    {
+        panelPrimeiraTela.SetActive(true);
+        panelInfo.SetActive(false);
+    }
+
+    public void fecharPanelConfig()
+    {
+        panelPrimeiraTela.SetActive(true);
+        panelConfig.SetActive(false);
+    }
+
+    public void naoSairDoGame()
+    {
+        panelPrimeiraTela.SetActive(true);
+        panelSair.SetActive(false);
+    }
+
+    public void sairDoGame() //BOTAO SIM
+    {
+        PlayerPrefs.DeleteAll();
+        Application.Quit();
+    }
+
 
     public void sceneAdicao()
     {
