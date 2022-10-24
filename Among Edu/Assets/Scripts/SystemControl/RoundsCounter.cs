@@ -9,7 +9,7 @@ public class RoundsCounter : MonoBehaviour
     [Header("Variáveis de erros e acertos")]
     public int totalAcertos;
     public int totalErros;
-    public int totalContas;
+    public float totalContas;
 
     public Text textAcertos;
     public Text textErros;
@@ -27,6 +27,12 @@ public class RoundsCounter : MonoBehaviour
 
     public Controle controle;
 
+    [Header("PROGRESSO")]
+    public Image barraProgressoRodadas;
+    public float totalRodadas; //recebe totalcontas
+    public int qtdRodadas;
+
+
     private void Start()
     {
         panelFinal.SetActive(false);
@@ -34,6 +40,7 @@ public class RoundsCounter : MonoBehaviour
 
     private void Update()
     {
+
         totalAcertos = PlayerPrefs.GetInt("Acertos");
         totalErros = PlayerPrefs.GetInt("Erros");
 
@@ -41,13 +48,14 @@ public class RoundsCounter : MonoBehaviour
         textErros.text = totalErros.ToString();
 
         totalContas = totalAcertos + totalErros;
+        totalRodadas = totalContas/10;
+        barraProgressoRodadas.fillAmount = totalRodadas;
 
         if (encontrouResposta == true && totalContas <= 10)
             StartCoroutine(ChamarNovaRodada());
 
         else if (totalContas >= 10)
             ChamaPanel();
-
     }
 
     IEnumerator ChamarNovaRodada()
