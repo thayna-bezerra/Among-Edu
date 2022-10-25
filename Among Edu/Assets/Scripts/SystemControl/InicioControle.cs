@@ -83,6 +83,9 @@ public class InicioControle : MonoBehaviour
     {
         panelPrimeiraTela.SetActive(true);
         panelConfig.SetActive(false);
+
+        //teste
+        SceneManager.LoadScene("Recompensa");
     }
 
     public void naoSairDoGame()
