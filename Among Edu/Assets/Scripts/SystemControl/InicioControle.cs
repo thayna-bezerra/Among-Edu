@@ -83,9 +83,6 @@ public class InicioControle : MonoBehaviour
     {
         panelPrimeiraTela.SetActive(true);
         panelConfig.SetActive(false);
-
-        //teste
-        SceneManager.LoadScene("Recompensa");
     }
 
     public void naoSairDoGame()
@@ -148,5 +145,10 @@ public class InicioControle : MonoBehaviour
         a1.SetActive(false);
         a2.SetActive(false);
         a3.SetActive(false);
+    }
+
+    public void abrirInsta()
+    {
+        Application.OpenURL("https://www.instagram.com/among_edu/");
     }
 }

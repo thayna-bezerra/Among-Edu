@@ -120,7 +120,7 @@ public class GameController : MonoBehaviour
     void SortearCores()
     {
         //PARA CONTA E RESPOSTA
-        corAleatoria = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
+        corAleatoria = new Color(Random.Range(0.50f, 10.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
         corResposta.GetComponent<SpriteRenderer>().color = corAleatoria;
         corN1.GetComponent<SpriteRenderer>().color = corAleatoria;
         corN2.GetComponent<SpriteRenderer>().color = corAleatoria;
@@ -131,9 +131,10 @@ public class GameController : MonoBehaviour
         pc.AnimationResposta2.enabled = false;
         pc.AnimationResposta3.enabled = false;
 
-        corN3.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
-        corN4.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
-        corN5.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
+        corN3.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.50f, 10.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
+        corN4.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.50f, 10.0f), Random.Range(0.0f, 1.0f), 1);
+        corN5.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.50f, 10.0f), 1);
+        //corN5.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
     }
 
     //Para as opções de respostas erradas

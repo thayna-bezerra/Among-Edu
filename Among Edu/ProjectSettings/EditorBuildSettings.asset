@@ -13,13 +13,13 @@ EditorBuildSettings:
     guid: 3cf8590dc2c1af94abda738f5aebf42f
   - enabled: 1
     path: Assets/Scenes/Subtracao.unity
-    guid: ac710771243a6e14797083b92b2daf5b
+    guid: 84e7d5b85b2d38643b4d49cd21108edc
   - enabled: 1
     path: Assets/Scenes/Multiplicacao.unity
-    guid: 46ed740cf2c4da54c8bd9e5d57c085ba
+    guid: 71543c8b671e50242b1e344b92751125
   - enabled: 1
     path: Assets/Scenes/Divisao.unity
-    guid: a31b5ee2e38d5944cb2dc406c80f27a8
+    guid: 866849bed1b9408498390ac31cb7166b
   - enabled: 1
     path: Assets/Scenes/Recompensa.unity
     guid: 23952cf5c8288f043801bd618544cf8c

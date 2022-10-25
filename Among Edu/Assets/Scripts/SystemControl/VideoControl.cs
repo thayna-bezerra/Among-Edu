@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 namespace YoutubePlayer
 {
@@ -11,38 +12,45 @@ namespace YoutubePlayer
         public YoutubePlayer youtubePlayer;
         VideoPlayer videoPlayer;
 
-        public Button btnPlay;
-        public Button btnPause;
         public Button btnReset;
+        public Button btnVoltar;
+
+        public Text Carregando;
+
+        private void Start()
+        {
+            Prepare();
+        }
 
         private void Awake()
         {
-            btnPlay.interactable = false;
-            btnPause.interactable = false;
-            btnReset.interactable = false;
+            btnReset.interactable = true;
+            btnVoltar.interactable = true;
 
             videoPlayer = youtubePlayer.GetComponent<VideoPlayer>();
             videoPlayer.prepareCompleted += VideoPlayerPreparedCompleted;
         }
-
+        
         void VideoPlayerPreparedCompleted(VideoPlayer source)
         {
-            btnPlay.interactable = source.isPrepared;
-            btnPause.interactable = source.isPrepared;
             btnReset.interactable = source.isPrepared;
+            btnVoltar.interactable = source.isPrepared;
         }
 
         public async void Prepare()
         {
             print("Carregando vídeo...");
+            Carregando.enabled = true;
             try
             {
                 await youtubePlayer.PrepareVideoAsync();
-                print("video carregado");
+                Carregando.enabled = false;
+
+                PlayVideo();
             }
             catch
             {
-                print("Error");
+                Carregando.text = ("ERRO");
             }
         }
 
@@ -51,15 +59,20 @@ namespace YoutubePlayer
             videoPlayer.Play();
         }
 
-        public void PauseVideo()
+        /*public void PauseVideo()
         {
             videoPlayer.Pause();
-        }
+        }*/
 
         public void ResetVideo()
         {
             videoPlayer.Stop();
             videoPlayer.Play();
+        }
+
+        public void VoltarInicio()
+        {
+            SceneManager.LoadScene("_Inicio");
         }
 
         void OnDestroy()
