@@ -14,6 +14,8 @@ public class GameController : MonoBehaviour
     public int resultadoMult;
     public int resultadoDivisao;
 
+    public int numAssistent;
+
     //PRINCIPAIS NÚMEROS DA CONTA
     public SpriteRenderer imgN1, imgN2;
     public SpriteRenderer imgResposta;
@@ -61,7 +63,7 @@ public class GameController : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Divisao")
         {
-            SortearNumsSub();
+            SortearNumsDiv();
             DividirNumeros(n1, n2);
         }
 
@@ -86,12 +88,20 @@ public class GameController : MonoBehaviour
 
     void SortearNumsSub()
     {
-        n1 = Random.Range(30, 100);
+        n1 = Random.Range(11, 30);
         n2 = Random.Range(1, 10);
 
         imgN1.GetComponent<SpriteRenderer>().sprite = numeros[n1];
         imgN2.GetComponent<SpriteRenderer>().sprite = numeros[n2];
+    }
+    
+    void SortearNumsDiv()
+    {
+        n1 = Random.Range(11, 20);
+        n2 = Random.Range(1, 10);
+        numAssistent = n1 / n2;
 
+        imgN2.GetComponent<SpriteRenderer>().sprite = numeros[numAssistent];
     }
 
     void SomarNumeros(int N1, int N2)
@@ -105,16 +115,19 @@ public class GameController : MonoBehaviour
         resultadoSubtracao = N1 - N2;
         imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoSubtracao];
     }
+
     void MultiplicarNumeros(int N1, int N2)
     {
         resultadoMult = N1 * N2;
         imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoMult];
     }
 
-    void DividirNumeros(int N1, int N2)
+    void DividirNumeros(int N1, int N2) 
     {
-        resultadoDivisao = N1 / N2;
-        imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[resultadoDivisao];
+        resultadoDivisao = numAssistent * N2; 
+
+        imgN1.GetComponent<SpriteRenderer>().sprite = numeros[resultadoDivisao];
+        imgResposta.GetComponent<SpriteRenderer>().sprite = numeros[N2];
     }
 
     void SortearCores()
@@ -147,7 +160,7 @@ public class GameController : MonoBehaviour
 
             for (int x = 0; x <= limiteNum - 1; x++)
             {
-                if (valorSorteado == resultadoSoma)
+                if (valorSorteado == resultadoSoma || valorSorteado == resultadoSubtracao || valorSorteado == resultadoMult || valorSorteado == n2)
                 {
                     goto Inicio;
                 }

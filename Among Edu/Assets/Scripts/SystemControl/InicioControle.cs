@@ -146,9 +146,4 @@ public class InicioControle : MonoBehaviour
         a2.SetActive(false);
         a3.SetActive(false);
     }
-
-    public void abrirInsta()
-    {
-        Application.OpenURL("https://www.instagram.com/among_edu/");
-    }
 }

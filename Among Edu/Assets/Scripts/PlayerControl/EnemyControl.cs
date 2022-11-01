@@ -43,7 +43,7 @@ public class EnemyControl : MonoBehaviour
     {
         inimigoParado();
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
 
         isStopped = false;
         isActive = true;
@@ -53,7 +53,7 @@ public class EnemyControl : MonoBehaviour
     {
         inimigoAndando();
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
 
         isStopped = true;
         isActive = false;

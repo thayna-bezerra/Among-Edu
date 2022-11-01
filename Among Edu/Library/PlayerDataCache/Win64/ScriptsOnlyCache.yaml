@@ -28,10 +28,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1108,5 +1106,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Multiplicacao.unity
   - Assets/Scenes/Divisao.unity
   - Assets/Scenes/Recompensa.unity
-  playerPath: "C:/Users/Thayn\xE1 Bezerra/OneDrive/Documentos/PIC - AMONG EDU/SEGUNDA
-    VERS\xC3O/Among Edu.exe"
+  playerPath: "C:/Users/Thayn\xE1 Bezerra/OneDrive/Documentos/PIC - AMONG EDU/2.1/Among
+    Edu.exe"
