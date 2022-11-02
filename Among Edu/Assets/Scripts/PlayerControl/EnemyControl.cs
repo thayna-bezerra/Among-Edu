@@ -18,7 +18,7 @@ public class EnemyControl : MonoBehaviour
     public SpriteRenderer sr;
 
     [SerializeField]
-    public PlayerController pc;
+    public PlayerController pc; 
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class EnemyControl : MonoBehaviour
         }
 
         if(isStopped == false && isActive == true)
-        {
+        { 
             StartCoroutine(forActiveTrue());
         }
     }
@@ -43,7 +43,7 @@ public class EnemyControl : MonoBehaviour
     {
         inimigoParado();
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(8f);
 
         isStopped = false;
         isActive = true;
@@ -53,7 +53,7 @@ public class EnemyControl : MonoBehaviour
     {
         inimigoAndando();
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(8f);
 
         isStopped = true;
         isActive = false;
@@ -64,7 +64,7 @@ public class EnemyControl : MonoBehaviour
         AnimationEnemy.enabled = false;
         transform.position = Vector2.Lerp(transform.position, posPlayer.position, velocity * Time.deltaTime);
 
-        if(this.gameObject.tag == "Enemy")
+        if (this.gameObject.tag == "Enemy")
         {
             if (transform.position.x > posPlayer.position.x)
                 sr.flipX = true;
@@ -77,7 +77,6 @@ public class EnemyControl : MonoBehaviour
                 sr.flipX = false;
             else sr.flipX = true;
         }
-
     } 
 
     void inimigoParado()

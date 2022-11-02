@@ -50,9 +50,6 @@ public class RoundsCounter : MonoBehaviour
         totalAcertos = PlayerPrefs.GetInt("Acertos");
         totalErros = PlayerPrefs.GetInt("Erros");
 
-        //textAcertos.text = totalAcertos.ToString(totalAcertos + " /");
-        //textErros.text = totalErros.ToString();
-
         totalContas = totalAcertos + totalErros;
         totalRodadas = totalContas/10;
         barraProgressoRodadas.fillAmount = totalRodadas;
@@ -89,6 +86,8 @@ public class RoundsCounter : MonoBehaviour
 
     void ChamaPanel()
     {
+        SoundController.sounds.tela_final.Play();
+
         panelFinal.SetActive(true);
         HUD.SetActive(false);
 

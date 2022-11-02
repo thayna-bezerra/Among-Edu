@@ -28,7 +28,15 @@ public class Controle : MonoBehaviour
     private void Start()
     {
         username = PlayerPrefs.GetString("User"); //pegando dado salvo no "user" e aplicando noutra variavel
-        textName.text = username.ToString();
+
+        if (username == "")
+        {
+            username = "Você";
+            textName.text = username.ToString();
+        }
+
+        else
+            textName.text = username.ToString();
 
         HUD.SetActive(true);
         btnPauseAtivado.SetActive(true);
@@ -55,6 +63,8 @@ public class Controle : MonoBehaviour
     
     public void GanhouJogoParado()
     {
+        SoundController.sounds.click.Play();
+
         btnPauseAtivado.SetActive(false);
         btnSair.SetActive(false);
 
@@ -71,6 +81,8 @@ public class Controle : MonoBehaviour
 
     public void jogoPausado()
     {
+        SoundController.sounds.click.Play();
+
         HUD.SetActive(false);
 
         isPaused = true;
@@ -88,6 +100,8 @@ public class Controle : MonoBehaviour
 
     public void jogoDespausado()
     {
+        SoundController.sounds.click.Play();
+
         HUD.SetActive(true);
 
         isPaused = false;
@@ -106,6 +120,8 @@ public class Controle : MonoBehaviour
 
     public void RepetirRodada()
     {
+        SoundController.sounds.click.Play();
+
         //Para não deletar o username
         PlayerPrefs.DeleteKey("Acertos");
         PlayerPrefs.DeleteKey("Erros");
@@ -115,6 +131,8 @@ public class Controle : MonoBehaviour
 
     public void voltarParaPrimeiraTela()
     {
+        SoundController.sounds.click.Play();
+
         //Para não deletar o username
         PlayerPrefs.DeleteKey("Acertos");
         PlayerPrefs.DeleteKey("Erros");
@@ -124,6 +142,8 @@ public class Controle : MonoBehaviour
 
     public void chamarPanelSair()
     {
+        SoundController.sounds.click.Play();
+
         HUD.SetActive(false);
 
         GanhouJogoParado();
@@ -132,6 +152,8 @@ public class Controle : MonoBehaviour
 
     public void naoSairDoGame()
     {
+        SoundController.sounds.click.Play();
+
         jogoDespausado();
 
         btnPauseAtivado.SetActive(true);

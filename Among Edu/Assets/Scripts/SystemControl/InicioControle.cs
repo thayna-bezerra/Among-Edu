@@ -46,6 +46,8 @@ public class InicioControle : MonoBehaviour
         panelPrimeiraTela.SetActive(true);
         panelOpcoes.SetActive(false);
         panelCutscene.SetActive(false);
+
+        SoundController.sounds.click.Play();
     }
 
     public void irParaOpcoes()
@@ -53,42 +55,56 @@ public class InicioControle : MonoBehaviour
         panelPrimeiraTela.SetActive(false);
         panelOpcoes.SetActive(true);
         panelCutscene.SetActive(false);
+
+        SoundController.sounds.click.Play();
     }
 
     public void abrirInformacoes()
     {
         panelPrimeiraTela.SetActive(false);
         panelInfo.SetActive(true);
+
+        SoundController.sounds.click.Play();
     }
     
     public void abrirConfiguracoes()
     {
         panelPrimeiraTela.SetActive(false);
         panelConfig.SetActive(true);
+
+        SoundController.sounds.click.Play();
     }
 
     public void abrirPanelSair()
     {
         panelPrimeiraTela.SetActive(false);
         panelSair.SetActive(true);
+
+        SoundController.sounds.click.Play();
     }
 
     public void fecharPanelInfo()
     {
         panelPrimeiraTela.SetActive(true);
         panelInfo.SetActive(false);
+
+        SoundController.sounds.click.Play();
     }
 
     public void fecharPanelConfig()
     {
         panelPrimeiraTela.SetActive(true);
         panelConfig.SetActive(false);
+
+        SoundController.sounds.click.Play();
     }
 
     public void naoSairDoGame()
     {
         panelPrimeiraTela.SetActive(true);
         panelSair.SetActive(false);
+
+        SoundController.sounds.click.Play();
     }
 
     public void sairDoGame() //BOTAO SIM
@@ -100,24 +116,32 @@ public class InicioControle : MonoBehaviour
 
     public void sceneAdicao()
     {
+        SoundController.sounds.click.Play();
+
         StartCoroutine(chamaCutscene());
         Adicao = true;
     }
 
     public void sceneSubtracao()
     {
+        SoundController.sounds.click.Play();
+
         StartCoroutine(chamaCutscene());
         Subtracao = true;
     }
 
     public void sceneMultiplicacao()
     {
+        SoundController.sounds.click.Play();
+
         StartCoroutine(chamaCutscene());
         Multiplicacao = true;
     }
 
     public void sceneDivisao()
     {
+        SoundController.sounds.click.Play();
+
         StartCoroutine(chamaCutscene());
         Divisao = true;
     }
@@ -125,6 +149,8 @@ public class InicioControle : MonoBehaviour
     IEnumerator chamaCutscene()
     {
         playCutscene();
+
+        SoundController.sounds.cutscene.Play();
 
         yield return new WaitForSeconds(4f); 
 
