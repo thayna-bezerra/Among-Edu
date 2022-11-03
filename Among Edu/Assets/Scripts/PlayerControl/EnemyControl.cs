@@ -11,6 +11,8 @@ public class EnemyControl : MonoBehaviour
     public bool isActive;
     public bool isStopped;
 
+    public bool activeSound;
+
     public Animator AnimationEnemy;
 
     public Transform posEnemy;

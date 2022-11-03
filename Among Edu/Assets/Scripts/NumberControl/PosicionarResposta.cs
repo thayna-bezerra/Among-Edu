@@ -8,8 +8,6 @@ public class PosicionarResposta : MonoBehaviour
     public float velocity = 3.0f;
     public PlayerController pc;
 
-    //public GameObject panelAcertou;
-
     public Controle controle;
     public RoundsCounter rc;
 
@@ -17,7 +15,6 @@ public class PosicionarResposta : MonoBehaviour
     {
         if(pc.encontrouResposta == true)
         {
-            SoundController.sounds.transition_acerto.Play();
             transform.position = Vector3.Lerp(transform.position, destination.position, velocity * Time.deltaTime); //Velocidade multiplicado por 0.02 segundos (deltaTime padrão)
             
             controle.GanhouJogoParado();

@@ -98,6 +98,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("RespostaCorreta"))
         {
+            SoundController.sounds.acerto.Play();
             encontrouResposta = true;
 
             rc.encontrouResposta = true; //usar var acima
@@ -107,6 +108,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("RespostaErrada/1"))
         {
+            SoundController.sounds.erro.Play();
             AnimationResposta1.enabled = true;
             AnimationResposta1.Play("respostaErrada");
             respostaErrada = true;
@@ -121,6 +123,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("RespostaErrada/2"))
         {
+            SoundController.sounds.erro.Play();
             AnimationResposta2.enabled = true;
             AnimationResposta2.Play("errada2");
             respostaErrada = true;
@@ -135,6 +138,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("RespostaErrada/3"))
         {
+            SoundController.sounds.erro.Play();
             AnimationResposta3.enabled = true;
             respostaErrada = true;
             AnimationResposta3.Play("errada3");
@@ -149,12 +153,14 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Enemy") || collision.CompareTag("Enemy2"))
         {
+            SoundController.sounds.erro.Play();
             print("tocou inimigo");
             vida--;
         }
 
         if (collision.CompareTag("Vida"))
         {
+            SoundController.sounds.click.Play();
             print("mais vida");
 
             if (vida <= 2)

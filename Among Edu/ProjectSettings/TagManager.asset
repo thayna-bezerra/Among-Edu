@@ -12,6 +12,7 @@ TagManager:
   - SpawnPosition
   - Vida
   - Enemy2
+  - Music
   layers:
   - Default
   - TransparentFX

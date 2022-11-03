@@ -11,8 +11,6 @@ public class SoundController : MonoBehaviour
     [Header("Efeitos Sonoros")]
     public AudioSource click;
     public AudioSource cutscene;
-    public AudioSource tela_final;
-    public AudioSource transition_acerto;
     public AudioSource acerto;
     public AudioSource erro;
 
@@ -20,5 +18,4 @@ public class SoundController : MonoBehaviour
     {
         sounds = this;
     }
-
 }

@@ -25,6 +25,8 @@ public class InicioControle : MonoBehaviour
     public bool Multiplicacao = false;
     public bool Divisao = false;
 
+    public DontDestroy dd;
+
     private void Start()
     {
        panelPrimeiraTela.SetActive(true);
@@ -150,11 +152,14 @@ public class InicioControle : MonoBehaviour
     {
         playCutscene();
 
+        dd.themeMusic.enabled = false;
         SoundController.sounds.cutscene.Play();
 
-        yield return new WaitForSeconds(4f); 
+        yield return new WaitForSeconds(4f);
 
-        if(Adicao == true)
+        dd.themeMusic.enabled = true;
+
+        if (Adicao == true)
             SceneManager.LoadScene("Adicao");
         if(Subtracao == true)
             SceneManager.LoadScene("Subtracao");

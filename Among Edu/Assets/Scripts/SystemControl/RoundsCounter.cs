@@ -61,7 +61,7 @@ public class RoundsCounter : MonoBehaviour
         {
             ChamaPanel();
             
-            if(totalAcertos >= 10)
+            if(totalAcertos >= 8)
             {
                 btnRecompensa.gameObject.SetActive(true);
                 btnVoltarMenu.gameObject.SetActive(false);
@@ -86,7 +86,7 @@ public class RoundsCounter : MonoBehaviour
 
     void ChamaPanel()
     {
-        SoundController.sounds.tela_final.Play();
+        //SoundController.sounds.tela_final.Play();
 
         panelFinal.SetActive(true);
         HUD.SetActive(false);
