@@ -13,6 +13,7 @@ public class SoundController : MonoBehaviour
     public AudioSource click;
     public AudioSource acerto;
     public AudioSource erro;
+    public AudioSource kabum;
 
     [Header("Configuração dos Sons")]
     public bool audioOn;

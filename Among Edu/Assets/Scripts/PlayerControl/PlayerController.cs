@@ -20,8 +20,6 @@ public class PlayerController : MonoBehaviour
     public int vida = 3;
     public GameObject[] VidasHUD = new GameObject[3];
 
-    //public GameObject panelErrou;
-
     public Controle controle;
     public RoundsCounter rc;
 
