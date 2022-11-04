@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class InicioControle : MonoBehaviour
@@ -68,7 +69,6 @@ public class InicioControle : MonoBehaviour
     {
         panelPrimeiraTela.SetActive(false);
         panelInfo.SetActive(true);
-
         SoundController.sounds.click.Play();
     }
     
