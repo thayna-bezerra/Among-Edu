@@ -19,6 +19,7 @@ namespace YoutubePlayer
 
         private void Start()
         {
+            AudioListener.volume = 0;
             Prepare();
         }
 

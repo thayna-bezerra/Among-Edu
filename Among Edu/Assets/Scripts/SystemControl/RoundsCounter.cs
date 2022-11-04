@@ -86,8 +86,6 @@ public class RoundsCounter : MonoBehaviour
 
     void ChamaPanel()
     {
-        //SoundController.sounds.tela_final.Play();
-
         panelFinal.SetActive(true);
         HUD.SetActive(false);
 

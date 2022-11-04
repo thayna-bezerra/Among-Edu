@@ -26,9 +26,12 @@ public class InicioControle : MonoBehaviour
     public bool Divisao = false;
 
     public DontDestroy dd;
+    public SoundController soundController;
 
     private void Start()
     {
+       soundController.audioOn = soundController.GetBool("StateAudio");
+
        panelPrimeiraTela.SetActive(true);
        panelOpcoes.SetActive(false);
        panelCutscene.SetActive(false);
@@ -115,7 +118,6 @@ public class InicioControle : MonoBehaviour
         Application.Quit();
     }
 
-
     public void sceneAdicao()
     {
         SoundController.sounds.click.Play();
@@ -152,12 +154,7 @@ public class InicioControle : MonoBehaviour
     {
         playCutscene();
 
-        dd.themeMusic.enabled = false;
-        SoundController.sounds.cutscene.Play();
-
         yield return new WaitForSeconds(4f);
-
-        dd.themeMusic.enabled = true;
 
         if (Adicao == true)
             SceneManager.LoadScene("Adicao");
