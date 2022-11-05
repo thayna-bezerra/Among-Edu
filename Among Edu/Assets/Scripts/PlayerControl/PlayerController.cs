@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     public Animator AnimationPlayer, AnimationResposta1, AnimationResposta2, AnimationResposta3;
 
+    [SerializeField] private FloatingJoystick joystick;
+
+    private Vector2 moveVector;
     public float speed;
     Rigidbody2D rgbd;
 
@@ -28,13 +31,12 @@ public class PlayerController : MonoBehaviour
     {
         AnimationPlayer = GetComponent<Animator>();
         rgbd = GetComponent<Rigidbody2D>();
-
-        //panelErrou.SetActive(false);
     }
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        //MovePlayer();
+        MovePlayerWithJoystick();
         AnimStatus();
     }
 
@@ -43,9 +45,7 @@ public class PlayerController : MonoBehaviour
         HUDVida();
         if(vida <= 0)
         {
-            //panelErrou.SetActive(true);
             controle.GanhouJogoParado();
-
             StartCoroutine(ChamarNovaRodada());
         }
     }
@@ -76,6 +76,35 @@ public class PlayerController : MonoBehaviour
         {
             isActive = false; //está parado
         }
+    }
+
+    void MovePlayerWithJoystick()
+    {
+        Vector2 pos = new Vector2(joystick.Horizontal, joystick.Vertical);
+        rgbd.velocity = pos * speed;
+
+        float a = joystick.Horizontal;
+        float b = joystick.Vertical;
+
+        if (a > 0)
+        {
+            isActive = true; //está ativo andando
+            olhandoParaDireita = true;
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+        }
+
+        else if (a < 0 || b < 0 || b > 0)
+        {
+            isActive = true; //está ativo andando
+            olhandoParaDireita = false;
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        }
+
+        else
+        {
+            isActive = false; //está parado
+        }
+
     }
 
     void AnimStatus()

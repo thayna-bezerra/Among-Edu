@@ -6,8 +6,8 @@ public class BallonController : MonoBehaviour
 {
     public GameObject balloonPrefab;
 
-    float spawnDelay = 0.5f;
-    float velocity = 64f;
+    float spawnDelay = 0.6f;
+    float velocity = 66f;
 
     Rigidbody2D rb;
 

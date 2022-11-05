@@ -89,9 +89,6 @@ public class RoundsCounter : MonoBehaviour
         panelFinal.SetActive(true);
         HUD.SetActive(false);
 
-        textAcertos.enabled = false;
-        textErros.enabled = false;
-
         btnRecompensa.gameObject.SetActive(false);
         btnVoltarMenu.gameObject.SetActive(true);
 
