@@ -19,7 +19,7 @@ namespace YoutubePlayer
 
         private void Start()
         {
-            AudioListener.volume = 0;
+            //AudioListener.volume = 0;
             Prepare();
         }
 
@@ -44,6 +44,7 @@ namespace YoutubePlayer
             Carregando.enabled = true;
             try
             {
+                AudioListener.volume = 0;
                 await youtubePlayer.PrepareVideoAsync();
                 Carregando.enabled = false;
 
@@ -51,6 +52,8 @@ namespace YoutubePlayer
             }
             catch
             {
+                //chamar player
+                AudioListener.volume = 0.5f;
                 Carregando.text = ("ERRO");
             }
         }
@@ -73,7 +76,7 @@ namespace YoutubePlayer
 
         public void VoltarInicio()
         {
-            SceneManager.LoadScene("_Inicio");
+            SceneManager.LoadScene("_Inicio"); 
         }
 
         void OnDestroy()

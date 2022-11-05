@@ -834,6 +834,7 @@ MonoBehaviour:
   btnReset: {fileID: 1429783441}
   btnVoltar: {fileID: 518780540}
   Carregando: {fileID: 2125529341}
+  soundController: {fileID: 0}
 --- !u!114 &1698751805
 MonoBehaviour:
   m_ObjectHideFlags: 0

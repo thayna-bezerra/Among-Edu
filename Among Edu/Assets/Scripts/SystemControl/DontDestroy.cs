@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour
 {
+    public SoundController soundController;
+
     void Awake()
     {
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Music");
@@ -14,6 +16,7 @@ public class DontDestroy : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        soundController.audioOn = soundController.GetBool("StateAudio");
         DontDestroyOnLoad(this.gameObject);
     }
 }
