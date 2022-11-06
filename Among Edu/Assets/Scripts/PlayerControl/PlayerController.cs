@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //MovePlayer();
+        MovePlayer();
         MovePlayerWithJoystick();
         AnimStatus();
     }
