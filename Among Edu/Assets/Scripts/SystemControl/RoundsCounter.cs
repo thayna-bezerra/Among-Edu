@@ -11,8 +11,8 @@ public class RoundsCounter : MonoBehaviour
     public int totalErros;
     public float totalContas;
 
-    public Text textAcertos;
-    public Text textErros;
+    //public Text textAcertos;
+    //public Text textErros;
 
     public Text panelTextAcertos;
     public Text panelTextErros;
@@ -22,7 +22,7 @@ public class RoundsCounter : MonoBehaviour
     public string username;
 
     public GameObject btnRecompensa;
-    public GameObject btnVoltarMenu;
+    public GameObject btnContinuar;
 
     public bool encontrouResposta = false;
     public bool respostaErrada = false;
@@ -64,7 +64,7 @@ public class RoundsCounter : MonoBehaviour
             if(totalAcertos >= 8)
             {
                 btnRecompensa.gameObject.SetActive(true);
-                btnVoltarMenu.gameObject.SetActive(false);
+                btnContinuar.gameObject.SetActive(false);
             }
         }
     }
@@ -90,7 +90,7 @@ public class RoundsCounter : MonoBehaviour
         HUD.SetActive(false);
 
         btnRecompensa.gameObject.SetActive(false);
-        btnVoltarMenu.gameObject.SetActive(true);
+        btnContinuar.gameObject.SetActive(true);
 
         controle.GanhouJogoParado();
 
