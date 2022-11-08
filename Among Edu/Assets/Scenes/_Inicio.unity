@@ -4584,8 +4584,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bruno Alves Moreira\n\nThayna Bezerra Silva\n\nAndrey Oliveira Stahl\n\nVin\xEDcius
-    Abreu Silva Franco"
+  m_Text: "Thayna Bezerra Silva\n\nAndrey Oliveira Stahl\n\nVin\xEDcius Abreu Silva
+    Franco\n\nBruno Alves Moreira"
 --- !u!222 &842182192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8303,16 +8303,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'tech lead
-
-
-    programmer
+  m_Text: 'developer
 
 
     designer
 
 
-    illustrator'
+    illustrator
+
+
+    tech lead'
 --- !u!222 &1901618602
 CanvasRenderer:
   m_ObjectHideFlags: 0
