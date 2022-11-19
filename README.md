@@ -11,3 +11,5 @@ Depois que a opção for selecionada, é preciso que o usuário guie o personage
 
 <b> Jogue e deixe seu feedback por aqui: https://th-rummer.itch.io/among-edu </b>
 
+<h2> Licença </h2>
+Este projeto está licenciado nos termos da licença GNU. Veja mais detalhes: <a href="https://github.com/thayna-bezerra/Among-Edu/blob/main/LICENSE.md">LICENSE.txt</a>
