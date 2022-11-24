@@ -10,6 +10,7 @@ Depois que a opção for selecionada, é preciso que o usuário guie o personage
 <h3 align="center"><img src="https://user-images.githubusercontent.com/58120519/202851123-fd4fef37-822a-472d-ac31-58d837e1cd69.gif"></h3>
 
 <b> Jogue e deixe seu feedback por aqui: https://th-rummer.itch.io/among-edu </b>
+<b> Disponível para Android: https://play.google.com/store/apps/details?id=com.thrummer.AmongEdu </b>
 
 <h2> Licença </h2>
 Este projeto está licenciado nos termos da licença GNU. Veja mais detalhes: <a href="https://github.com/thayna-bezerra/Among-Edu/blob/main/LICENSE.md">LICENSE.txt</a>
